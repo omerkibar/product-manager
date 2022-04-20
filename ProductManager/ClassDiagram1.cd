@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Form 1 Constructor olarak login Formdan databaseType stringi alır ve Utilities.GetDatabase(databaseType) fonksiyonunu kullanarak sonraki işlemlerini bu database türünü kullanarak yapar.&#xD;&#xA;Product ile ilgili database işlemleri burada başlatılır. ">
+    <Position X="6.26" Y="4.01" Height="1.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Database ile ilgili yapılcak metotları içerir.">
+    <Position X="4.042" Y="4.927" Height="0.74" Width="1.377" />
+  </Comment>
+  <Comment CommentText="Databasedeki Products tablosunun her bir satırı bir Product olarak kabul edilir.&#xD;&#xA;Program içinde ekleme silme listeleme güncelleme işlemleri yapılırken kullanılır">
+    <Position X="0.5" Y="4.896" Height="2.26" Width="1.46" />
+  </Comment>
+  <Comment CommentText="UserDal Database işlemleri yapılırken kullanılan class ">
+    <Position X="0.5" Y="2.198" Height="0.75" Width="1.492" />
+  </Comment>
+  <Comment CommentText="User ile ilgili giriş yapma ve kayıt olma işlemlerinin yapıldığı classtır. MSSQL kullanır.">
+    <Position X="4.031" Y="0.542" Height="1.073" Width="1.377" />
+  </Comment>
+  <Comment CommentText="İlk açılan formdur. Kullanıcıdan giriş bilgilerini ister. Kullanıcının kayıt olabilmesi için Register formu açan bir link label içerir.&#xD;&#xA;Başarılı bir girişten sonra Form1i açar.">
+    <Position X="7.312" Y="0.5" Height="1.687" Width="1.377" />
+  </Comment>
+  <Comment CommentText="Kullanıcıyı kayıt etmek için bilgilerini alır ve bilgilieri kontrol eder ve kayıt olma işlemini başlatır. Kayıttan sonra LoginForm'u yeniden açar.&#xD;&#xA;">
+    <Position X="7.323" Y="2.427" Height="1.375" Width="1.377" />
+  </Comment>
+  <Comment CommentText="Programda kullanılan bazı static metotları içerir Ürün doğrulama gibi">
+    <Position X="11.552" Y="0.5" Height="1.063" Width="1.19" />
+  </Comment>
+  <Comment CommentText="Programı LoginForm ile başlatır.">
+    <Position X="11.542" Y="2.01" Height="0.74" Width="1.377" />
+  </Comment>
+  <Class Name="Project_1.Form1" Collapsed="true">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAABGAgAAAQAACAAAGDAACAgIAAAOQAAEBBQQY=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.LoginForm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAgCAAABAAAACAAAACAEEACkACAgAAAQBAAAA=</HashCode>
+      <FileName>LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.MsSql" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAQAAAEAAAAAA=</HashCode>
+      <FileName>MsSql.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Project_1.MySql" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAQAAAEAAABAA=</HashCode>
+      <FileName>MySql.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Project_1.Product">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.Program" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.RegisterForm" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAgAiAAABAAAACCAAACAAFAAAAAAAAAAAAgAEA=</HashCode>
+      <FileName>RegisterForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.User">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.UserDal">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQEAAABAA=</HashCode>
+      <FileName>UserDal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.Utilities" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Utilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.Properties.Resources" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_1.Properties.Settings" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Project_1.IDatabase">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>IDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
